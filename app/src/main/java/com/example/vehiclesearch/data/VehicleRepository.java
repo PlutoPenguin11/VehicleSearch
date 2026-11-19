@@ -24,6 +24,6 @@ public class VehicleRepository {
                 matches.add(vehicle);
             }
         }
-        return vehicles;
+        return matches;
     }
 }

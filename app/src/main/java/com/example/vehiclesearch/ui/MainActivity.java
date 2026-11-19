@@ -1,4 +1,6 @@
 package com.example.vehiclesearch.ui;
 
-public class MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
 }

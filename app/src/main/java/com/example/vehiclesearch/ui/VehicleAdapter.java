@@ -11,11 +11,12 @@ import com.example.vehiclesearch.model.Vehicle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VehicleAdapter extends RecyclerView.Adapte<VehicleAdapter> {
+public class VehicleAdapter extends
+        RecyclerView.Adapter<VehicleAdapter.VehicleHolder> {
 
-    private final List items = new ArrayList<>();
+    private final List<Vehicle> items = new ArrayList<>();
 
-    public void submitVehicles(List vehicles) {
+    public void submitVehicles(List<Vehicle> vehicles) {
         items.clear();
         if (vehicles != null) items.addAll(vehicles);
         notifyDataSetChanged();
@@ -51,3 +52,4 @@ public class VehicleAdapter extends RecyclerView.Adapte<VehicleAdapter> {
         }
     }
 }
+

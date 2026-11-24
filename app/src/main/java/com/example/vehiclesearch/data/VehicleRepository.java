@@ -10,7 +10,8 @@ import java.util.Locale;
 public class VehicleRepository {
     private final List<Vehicle> vehicles = Arrays.asList(
             new Vehicle("Toyota", "Camry", 2024),
-            new Vehicle("Toyota", "Corolla", 2023)
+            new Vehicle("Toyota", "Corolla", 2023),
+            new Vehicle("Noble", "M600", 2010)
     );
 
     public List<Vehicle> searchByMake(String query) {

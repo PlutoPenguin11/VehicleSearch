@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.MainActivity">
+    android:layout_marginTop="38dp">
 
     <EditText
         android:id="@+id/editMake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:hint="@string/vehicle_make_hint"
+        android:hint="Enter vehicle make"
         android:inputType="textCapWords"
         android:singleLine="true" />
 
@@ -21,7 +18,7 @@
         android:id="@+id/buttonSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search" />
+        android:text="Search" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -35,14 +32,12 @@
         android:id="@+id/textStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="@string/search_instructions" />
+        android:paddingVertical="8dp"
+        android:text="Enter a make and tap Search" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerVehicles"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
-
 </LinearLayout>
